@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDv-bL-Soh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ru-hw-rfV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1804" y="-70.614692653673174"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Book Form Table View Controller-->
         <scene sceneID="BCG-pG-6dg">
             <objects>
-                <tableViewController id="6ru-hw-rfV" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BookForm" id="6ru-hw-rfV" customClass="BookFormTableViewController" customModule="FavoriteBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fIh-Qu-z0T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,6 +256,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-lA-DGV">
                                                     <rect key="frame" x="184" y="7" width="46" height="30.5"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="save:" destination="6ru-hw-rfV" eventType="touchUpInside" id="hJg-lA-PuG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -274,6 +277,12 @@
                             <outlet property="delegate" destination="6ru-hw-rfV" id="XwE-oz-lCr"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="authorTextField" destination="xuu-pb-HOl" id="r00-KK-6Yh"/>
+                        <outlet property="genreTextField" destination="0t0-A9-X22" id="1I6-dn-4hG"/>
+                        <outlet property="lengthTextField" destination="1AD-i0-0Vb" id="J4R-0V-UkU"/>
+                        <outlet property="titleTextField" destination="O1N-DU-4oD" id="a9L-ni-m5q"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMe-Ds-hwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
