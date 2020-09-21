@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2A4470722518412E004FE276 /* BookFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4470712518412E004FE276 /* BookFormTableViewController.swift */; };
+		2A44707425187ABF004FE276 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44707325187ABF004FE276 /* BookTableViewController.swift */; };
 		2C5E3E1A1E514CC400C02C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E191E514CC400C02C5F /* AppDelegate.swift */; };
 		2C5E3E1F1E514CC400C02C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E3E1D1E514CC400C02C5F /* Main.storyboard */; };
 		2C5E3E211E514CC400C02C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E3E201E514CC400C02C5F /* Assets.xcassets */; };
 		2C5E3E241E514CC400C02C5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E3E221E514CC400C02C5F /* LaunchScreen.storyboard */; };
 		2C5E3E2C1E514CE500C02C5F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E2B1E514CE500C02C5F /* Book.swift */; };
-		2C5E3E301E514D3400C02C5F /* BookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A4470712518412E004FE276 /* BookFormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFormTableViewController.swift; sourceTree = "<group>"; };
+		2A44707325187ABF004FE276 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookTableViewController.swift; path = "../../../../Downloads/Student Resources/4 - Tables and Persistence/6 - Intermediate Table Views/lab/FavoriteBook/FavoriteBook/BookTableViewController.swift"; sourceTree = "<group>"; };
 		2C5E3E161E514CC400C02C5F /* FavoriteBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5E3E191E514CC400C02C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5E3E1E1E514CC400C02C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		2C5E3E231E514CC400C02C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C5E3E251E514CC400C02C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C5E3E2B1E514CE500C02C5F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		2C5E3E181E514CC400C02C5F /* FavoriteBook */ = {
 			isa = PBXGroup;
 			children = (
-				2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */,
+				2A44707325187ABF004FE276 /* BookTableViewController.swift */,
 				2C5E3E191E514CC400C02C5F /* AppDelegate.swift */,
 				2C5E3E2B1E514CE500C02C5F /* Book.swift */,
 				2C5E3E1D1E514CC400C02C5F /* Main.storyboard */,
@@ -146,7 +146,7 @@
 			files = (
 				2C5E3E1A1E514CC400C02C5F /* AppDelegate.swift in Sources */,
 				2A4470722518412E004FE276 /* BookFormTableViewController.swift in Sources */,
-				2C5E3E301E514D3400C02C5F /* BookFormViewController.swift in Sources */,
+				2A44707425187ABF004FE276 /* BookTableViewController.swift in Sources */,
 				2C5E3E2C1E514CE500C02C5F /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
