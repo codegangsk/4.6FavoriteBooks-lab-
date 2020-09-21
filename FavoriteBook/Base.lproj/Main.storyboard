@@ -257,12 +257,13 @@
                                                     <rect key="frame" x="184" y="7" width="46" height="30.5"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
-                                                        <action selector="save:" destination="6ru-hw-rfV" eventType="touchUpInside" id="hJg-lA-PuG"/>
+                                                        <action selector="saveButtonTapped:" destination="6ru-hw-rfV" eventType="touchUpInside" id="Cue-TC-gBi"/>
+                                                        <segue destination="7Dl-dn-dst" kind="unwind" identifier="unwind" unwindAction="unwindToFavoriteBooks:" id="9H8-UW-fV8"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="kwn-lA-DGV" secondAttribute="trailing" constant="184" id="3ks-dc-qmX"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kwn-lA-DGV" secondAttribute="trailing" symbolic="YES" id="3ks-dc-qmX"/>
                                                 <constraint firstAttribute="bottom" secondItem="kwn-lA-DGV" secondAttribute="bottom" constant="6.5" id="GCr-6S-pYe"/>
                                                 <constraint firstItem="kwn-lA-DGV" firstAttribute="top" secondItem="mGl-VY-WM4" secondAttribute="top" constant="7" id="fPU-Qb-5aJ"/>
                                                 <constraint firstItem="kwn-lA-DGV" firstAttribute="leading" secondItem="mGl-VY-WM4" secondAttribute="leading" constant="184" id="fY5-bk-uLb"/>
@@ -281,12 +282,13 @@
                         <outlet property="authorTextField" destination="xuu-pb-HOl" id="r00-KK-6Yh"/>
                         <outlet property="genreTextField" destination="0t0-A9-X22" id="1I6-dn-4hG"/>
                         <outlet property="lengthTextField" destination="1AD-i0-0Vb" id="J4R-0V-UkU"/>
-                        <outlet property="titleTextField" destination="O1N-DU-4oD" id="a9L-ni-m5q"/>
+                        <outlet property="titleTextField" destination="oST-FX-yZA" id="iFM-BA-lhp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMe-Ds-hwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7Dl-dn-dst" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2556.521739130435" y="-71.651785714285708"/>
+            <point key="canvasLocation" x="2542" y="-71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X24-gS-ZXq">

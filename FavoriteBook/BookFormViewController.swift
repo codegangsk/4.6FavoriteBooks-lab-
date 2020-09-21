@@ -20,15 +20,6 @@ class BookFormViewController: UIViewController {
         updateView()
     }
     
-    func updateView() {
-        guard let book = book else {return}
-        
-        titleTextField.text = book.title
-        authorTextField.text = book.author
-        genreTextField.text = book.genre
-        lengthTextField.text = book.length
-    }
-    
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let title = titleTextField.text,
             let author = authorTextField.text,
